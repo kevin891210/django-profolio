@@ -1,0 +1,10 @@
+{% extends 'porfolio/base.html' %}
+{%  block content %}
+
+<h1>{{ id.title }}</h1>
+
+<h2>{{ id.date|date:'M n Y'}}</h2>
+
+<p>{{ id.description|safe }}</p>
+
+{% endblock %}
